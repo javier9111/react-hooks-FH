@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test on <HomeScreen/> should show properly 1`] = `<HomeScreen />`;

@@ -25,9 +25,14 @@ export const useFetch = (url) => {
             error: null,
             data,
           });
-        } else {
-          console.log("setState no se llamo");
         }
+      })
+      .catch(() => {
+        setState({
+          loading: false,
+          error: "No se pudo cargar la info",
+          data: null,
+        });
       });
   }, [url]);
 
